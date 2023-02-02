@@ -1,13 +1,13 @@
 {% set name = "react-ipywidgets" %}
-{% set version = "0.11.1" %}
+{% set version = "0.12" %}
 
 package:
   name: {{ name|lower }}
   version: {{ version }}
 
 source:
-  url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/react-ipywidgets-{{ version }}.tar.gz
-  sha256: 898497ad579d3b90a032853ef73263c874577b8ffdcd33e63b66ed1f9fca2622
+  url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name.replace('-', '_') }}-{{ version }}.tar.gz
+  sha256: d6abb48fd523d88a03589465d6bfb6d041237b572349edd31f2849196bb233cf
 
 build:
   noarch: python
